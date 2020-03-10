@@ -1,0 +1,8 @@
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\bin\Debug\netcoreapp3.1\Arquivarme.Data.deps.json
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\bin\Debug\netcoreapp3.1\Arquivarme.Data.dll
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\bin\Debug\netcoreapp3.1\Arquivarme.Data.pdb
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\obj\Debug\netcoreapp3.1\Arquivarme.Data.csprojAssemblyReference.cache
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\obj\Debug\netcoreapp3.1\Arquivarme.Data.AssemblyInfoInputs.cache
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\obj\Debug\netcoreapp3.1\Arquivarme.Data.AssemblyInfo.cs
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\obj\Debug\netcoreapp3.1\Arquivarme.Data.dll
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Data\obj\Debug\netcoreapp3.1\Arquivarme.Data.pdb
