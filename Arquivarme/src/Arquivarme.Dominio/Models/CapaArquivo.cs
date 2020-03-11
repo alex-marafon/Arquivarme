@@ -12,6 +12,7 @@ namespace Arquivarme.Dominio.Models
         public CapaArquivo()
         {
             DataCriacao = DataCriacao.Date;
+            
 
             //CriadoPor recebe o Guid do Usuario 
         }
@@ -48,7 +49,10 @@ namespace Arquivarme.Dominio.Models
 
         public DateTime DataCriacao { get; set; }
 
-        public Guid CriadoPor { get; set; }
+        
+        //Verificar uma forma para setar automatico o usuario atual.
+        //public Guid UsuarioId { get; set; }
+        //public Usuario Usuario { get; set; }
 
     }
 }

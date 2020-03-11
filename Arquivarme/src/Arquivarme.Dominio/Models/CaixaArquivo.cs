@@ -23,5 +23,7 @@ namespace Arquivarme.Dominio.Models
 
         public DateTime DataCriacao { get; set; }
 
+
+
     }
 }
