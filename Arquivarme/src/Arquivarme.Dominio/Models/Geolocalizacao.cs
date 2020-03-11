@@ -18,5 +18,7 @@ namespace Arquivarme.Dominio.Models
         public string Cidade { get; set; }
         [Required]
         public decimal CodigoIBGE { get; set; }
+
+        public ICollection<Empresa> Empresa { get; set; }
     }
 }

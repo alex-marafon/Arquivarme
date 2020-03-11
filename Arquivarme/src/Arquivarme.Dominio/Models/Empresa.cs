@@ -8,6 +8,12 @@ namespace Arquivarme.Dominio.Models
 {
    public class Empresa : EntitiBase
     {
+        public Empresa()
+        {
+            var empresa = new Empresa();
+        }
+
+
         [Required]
         public decimal Codigo { get; set; }
         [Required]
@@ -38,6 +44,9 @@ namespace Arquivarme.Dominio.Models
         public Guid EmpresaId { get; set; }
         public Empresa EmpresaRelacionadas { get; set; }
 
+
+        public ICollection<Empresa> Empresas { get; set; }
+        public ICollection<CapaArquivo> CapaArquivo { get; set; }
 
     }
 }
