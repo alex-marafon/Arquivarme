@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Arquivarme.Dominio.Models
 {
-   public class CaixaArquivo : EntitiBase
+   public class CaixaArquivo
     {
         public CaixaArquivo()
         {
