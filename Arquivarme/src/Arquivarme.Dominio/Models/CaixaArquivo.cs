@@ -10,20 +10,23 @@ namespace Arquivarme.Dominio.Models
     {
         public CaixaArquivo()
         {
-            Ativo = true;
+            CaixaArquivoId = Guid.NewGuid();
+            Entrege = false;
             DataCriacao = DataCriacao.Date;
         }
+
+
+        [Required]
+        public Guid CaixaArquivoId { get; set; }
+
+        public bool Entrege { get; set; }
+
+        public DateTime DataCriacao { get; set; }
 
         [Required]
         [Display(Name = "Empresa")]
         public Guid EmpresaId { get; set; }
         public Empresa Empresa { get; set; }
-
-        public bool Ativo { get; set; }
-
-        public DateTime DataCriacao { get; set; }
-
-
 
     }
 }

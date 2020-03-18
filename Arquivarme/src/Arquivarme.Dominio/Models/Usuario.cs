@@ -1,4 +1,5 @@
 ﻿using Arquivarme.Dominio.Entidades;
+using Arquivarme.Dominio.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,22 +7,25 @@ using System.Text;
 
 namespace Arquivarme.Dominio.Models
 {
-   public class Usuario : EntitiBase
+   public class Usuario 
     {
         public Usuario()
         {
-            Ativo = true;
+            UsuarioId = Guid.NewGuid();
         }
 
+        public Guid UsuarioId { get; set; }
         [Required]
         public decimal CPF { get; set; }
         [Required]
         public string Nome { get; set; }
         [Required]
         public string Senha { get; set; }
+        [Required]
+        public Status Status { get; set; }
 
-        public bool Ativo { get; set; }
+        
 
-        public ICollection<CapaArquivo>CapaArquivo { get; set; }
+
     }
 }

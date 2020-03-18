@@ -6,15 +6,17 @@ using System.Text;
 
 namespace Arquivarme.Dominio.Models
 {
-   public class Empresa : EntitiBase
+   public class Empresa
     {
-        public Empresa()
-        {
-            var empresa = new Empresa();
+        public Empresa() 
+        { 
+            EmpresaId = Guid.NewGuid();
+           
         }
 
-
+        public Guid EmpresaId { get; set; }
         [Required]
+        [MaxLength(10)]
         public decimal Codigo { get; set; }
         [Required]
         public string NomeFantasia { get; set; }
@@ -25,28 +27,18 @@ namespace Arquivarme.Dominio.Models
         [Required]
         public string Endereco { get; set; }
         [Required]
+         [MaxLength(10)]
         public decimal Numero { get; set; }
         [Required]
         public string Bairro { get; set; }
-
         [Required]
-        public Guid GeolocalizacaoId { get; set; }
-        public virtual Geolocalizacao Geolocalizacao { get; set; }
-
-        [Required]
+        [MaxLength(15)]
         public decimal TelFixo { get; set; }
+        [MaxLength(15)]
         public decimal TelCelular { get; set; }
         [Required]
         public string Email { get; set; }
 
-
-        [Display(Name = "Empresa")]
-        public Guid EmpresaId { get; set; }
-        public Empresa EmpresaRelacionadas { get; set; }
-
-
-        public ICollection<Empresa> Empresas { get; set; }
-        public ICollection<CapaArquivo> CapaArquivo { get; set; }
-
+        public IReadOnlyCollection<CapaArquivo> CapaArquivo { get; set; }
     }
 }

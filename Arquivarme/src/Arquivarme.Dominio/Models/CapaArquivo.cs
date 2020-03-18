@@ -39,17 +39,17 @@ namespace Arquivarme.Dominio.Models
 
         [Required]
         [Display(Name ="Data Inicial")]
-        [DataType(DataType.Date)]
+        //[DataType(DataType.Date)]
         public DateTime DataInicio { get; set; }
 
         [Required]
         [Display(Name = "Data Final")]
-        [DataType(DataType.Date)]
+        //[DataType(DataType.Date)]
         public DateTime DataFinal { get; set; }
 
         public DateTime DataCriacao { get; set; }
 
-        
+
         //Verificar uma forma para setar automatico o usuario atual.
         //public Guid UsuarioId { get; set; }
         //public Usuario Usuario { get; set; }

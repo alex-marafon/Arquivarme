@@ -16,6 +16,14 @@ namespace Arquivarme.Data.ORM
         public DbSet<Categoria> Categoria { get; set; }
         
         public DbSet<Geolocalizacao> Geolocalizacao { get; set; }
+       
+        public DbSet<CaixaArquivo> CaixaArquivo { get; set; }
+        
+        public DbSet<CapaArquivo> CapaArquivo { get; set; }
+        
+        public DbSet<TipoMovimento> TipoMovimento { get; set; }
+
+        public DbSet<Usuario> Usuario { get; set; }
 
     }
 }

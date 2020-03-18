@@ -10,5 +10,6 @@ namespace Arquivarme.Dominio.Models
     {
         [Required]
         public string Categorias { get; set; }
+        public IReadOnlyCollection<CapaArquivo> CapaArquivo { get; set; }
     }
 }

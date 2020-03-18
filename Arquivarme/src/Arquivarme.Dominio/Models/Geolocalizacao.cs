@@ -6,8 +6,14 @@ using System.Text;
 
 namespace Arquivarme.Dominio.Models
 {
-   public class Geolocalizacao : EntitiBase
+   public class Geolocalizacao
     {
+        public Geolocalizacao()
+        {
+            GeolocalizacaoId = Guid.NewGuid();
+        }
+
+        public Guid GeolocalizacaoId { get; set; }
         [Required]
         public string Pais { get; set; }
         [Required]
@@ -17,8 +23,10 @@ namespace Arquivarme.Dominio.Models
         [Required]
         public string Cidade { get; set; }
         [Required]
+        [MaxLength(15)]
         public decimal CodigoIBGE { get; set; }
 
-        public ICollection<Empresa> Empresa { get; set; }
+
+        public IReadOnlyCollection<CapaArquivo> CapaArquivo { get; set; }
     }
 }
