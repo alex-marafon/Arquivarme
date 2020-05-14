@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Arquivarme.Dominio.Models.Empresa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeFantasia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InscricaoFederal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InscricaoEstadual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bairro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelFixo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelCelular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeFantasia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InscricaoFederal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InscricaoEstadual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelFixo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelCelular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmpresaId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmpresaId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmpresaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

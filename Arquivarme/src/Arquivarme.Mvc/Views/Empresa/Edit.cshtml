@@ -1,0 +1,79 @@
+﻿@model Arquivarme.Dominio.Models.Empresa
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Empresa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmpresaId" />
+            <div class="form-group">
+                <label asp-for="Codigo" class="control-label"></label>
+                <input asp-for="Codigo" class="form-control" />
+                <span asp-validation-for="Codigo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeFantasia" class="control-label"></label>
+                <input asp-for="NomeFantasia" class="form-control" />
+                <span asp-validation-for="NomeFantasia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InscricaoFederal" class="control-label"></label>
+                <input asp-for="InscricaoFederal" class="form-control" />
+                <span asp-validation-for="InscricaoFederal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InscricaoEstadual" class="control-label"></label>
+                <input asp-for="InscricaoEstadual" class="form-control" />
+                <span asp-validation-for="InscricaoEstadual" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco" class="control-label"></label>
+                <input asp-for="Endereco" class="form-control" />
+                <span asp-validation-for="Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numero" class="control-label"></label>
+                <input asp-for="Numero" class="form-control" />
+                <span asp-validation-for="Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bairro" class="control-label"></label>
+                <input asp-for="Bairro" class="form-control" />
+                <span asp-validation-for="Bairro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelFixo" class="control-label"></label>
+                <input asp-for="TelFixo" class="form-control" />
+                <span asp-validation-for="TelFixo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelCelular" class="control-label"></label>
+                <input asp-for="TelCelular" class="form-control" />
+                <span asp-validation-for="TelCelular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
