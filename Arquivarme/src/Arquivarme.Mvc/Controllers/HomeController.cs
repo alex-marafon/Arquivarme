@@ -20,6 +20,7 @@ namespace Arquivarme.Mvc.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 

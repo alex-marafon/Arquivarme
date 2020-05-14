@@ -313,3 +313,8 @@ C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\
 C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\TipoMovimento\Details.cshtml.g.cs
 C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\TipoMovimento\Edit.cshtml.g.cs
 C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\TipoMovimento\Index.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Create.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Delete.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Details.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Edit.cshtml.g.cs
+C:\Users\alex.marafon\source\repos\Arquivarme\Arquivarme\src\Arquivarme.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Index.cshtml.g.cs
